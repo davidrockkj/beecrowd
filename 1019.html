@@ -1,0 +1,27 @@
+<html>
+    <meta charset="utf-8">
+    <script>
+        /*
+        Read an integer value, which is the duration in seconds
+        of a certain event in a factory, and inform it expressed
+        in hours:minutes:seconds.
+
+        Input
+        The input file contains an integer N.
+
+        Output
+        Print the read time in the input file (seconds) converted
+        in hours:minutes:seconds like the following example.
+        */
+
+        let N = prompt("")
+
+let horas = parseInt(N / 3600)
+let temp = (N % (3600))
+let minutos = parseInt((temp / 60))
+let segundos = temp % 60
+
+console.log(`${horas}:${minutos}:${segundos}\n`)
+
+    </script>
+</html>
